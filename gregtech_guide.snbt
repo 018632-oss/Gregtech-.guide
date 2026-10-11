@@ -1,0 +1,385 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gregtech_guide"
+	group: ""
+	icon: "minecraft:book"
+	id: "6A88479038AD41C2"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This chapter walks you through the early game of GregTech CEu Modern.", "Tip: hover over any item and press R to see how it is made, or U to see what it is used for (JEI).", "Tip: sneak and right-click the Field Guide book for 3D previews of the Coke Oven and Primitive Blast Furnace.", "Click the check below to begin."]
+			icon: "minecraft:book"
+			id: "C9D9327E0880242A"
+			tasks: [{
+				id: "68C155A56C2B11EF"
+				type: "checkmark"
+			}]
+			title: "Welcome to the GregTech Guide"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C9D9327E0880242A"]
+			description: ["Collect at least 8 logs. You need planks and sticks for a crafting table and tools. Logs are also what the Coke Oven later turns into charcoal."]
+			icon: "minecraft:oak_log"
+			id: "41AE147B44BE306F"
+			tasks: [{
+				id: "D805CCE2D26B882C"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:oak_log" }
+				count: 8L
+				type: "item"
+			}]
+			title: "Gather Wood"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41AE147B44BE306F"]
+			description: ["Craft a crafting table from planks. Almost every early recipe starts here."]
+			icon: "minecraft:crafting_table"
+			id: "7A09B37EA29CFFDD"
+			tasks: [{
+				id: "4B705959645B8E73"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:crafting_table" }
+				count: 1L
+				type: "item"
+			}]
+			title: "Crafting Table"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A09B37EA29CFFDD"]
+			description: ["Craft a furnace from 8 cobblestone. You will smelt ore, nuggets and bricks in it long before you have any machines."]
+			icon: "minecraft:furnace"
+			id: "EA0B9590A7808131"
+			tasks: [{
+				id: "0E68353CC40A4410"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:furnace" }
+				count: 1L
+				type: "item"
+			}]
+			title: "Furnace"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["EA0B9590A7808131"]
+			description: ["Mine raw iron. Iron feeds your first tools and machine parts, and the Primitive Blast Furnace consumes iron ingots to make steel. Use JEI's ore vein info to find where ores generate in your world."]
+			icon: "minecraft:raw_iron"
+			id: "4949EE6B7F2F7142"
+			tasks: [{
+				id: "66B1ABA2E223EF0F"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:raw_iron" }
+				count: 8L
+				type: "item"
+			}]
+			title: "Mine Iron"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4949EE6B7F2F7142"]
+			description: ["Smelt at least 16 iron ingots. Plan to keep a steady supply: ingots go into tools, steam machine parts and later the blast furnace."]
+			icon: "minecraft:iron_ingot"
+			id: "2DE1AF04D2AEDC3D"
+			tasks: [{
+				id: "7F6C1830A8542BD4"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:iron_ingot" }
+				count: 16L
+				type: "item"
+			}]
+			title: "Smelt Iron Ingots"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2DE1AF04D2AEDC3D"]
+			description: ["Wrought iron is made by smelting iron nuggets in a furnace, one nugget at a time. Turn some of your iron into nuggets, smelt them, and combine the results into ingots (check JEI for the exact steps in your version). It makes better early tools and parts than plain iron."]
+			icon: "minecraft:iron_nugget"
+			id: "4D6C009D811F9DAA"
+			tasks: [{
+				id: "CAB9C5FB55F869B3"
+				type: "checkmark"
+			}]
+			title: "Wrought Iron"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["EA0B9590A7808131"]
+			description: ["Gather 16+ coal or charcoal. It fuels furnaces, the steam boiler, and the Primitive Blast Furnace."]
+			icon: "minecraft:coal"
+			id: "0211149A7626AA88"
+			tasks: [{
+				id: "9501C6700803A538"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:coal" }
+				count: 16L
+				type: "item"
+			}]
+			title: "Stockpile Fuel"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["EA0B9590A7808131"]
+			description: ["Gather several stacks of sand and clay. Per the community wiki, a Coke Oven needs about 175 sand and 105 clay in total, and a Primitive Blast Furnace about 132 clay. Both are built from bricks made out of these."]
+			icon: "minecraft:clay_ball"
+			id: "BA70241809EF3A93"
+			tasks: [{
+				id: "BEDC6F377F34B521"
+				type: "checkmark"
+			}]
+			title: "Stockpile Sand and Clay"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["BA70241809EF3A93"]
+			description: ["Craft a Wooden Brick Form. It is a reusable mould (not consumed) needed to make coke oven bricks. Look up its recipe in JEI."]
+			icon: "minecraft:oak_planks"
+			id: "A30FB040645D641A"
+			tasks: [{
+				id: "14B328C0E8A7D71C"
+				type: "checkmark"
+			}]
+			title: "Wooden Brick Form"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["A30FB040645D641A"]
+			description: ["Make 25 Coke Oven Bricks, enough for one Coke Oven. Make a few extra if you want to build more than one (neighbouring ovens can share walls)."]
+			icon: "minecraft:bricks"
+			id: "16CE9C85F3F65236"
+			tasks: [{
+				id: "6DB7659E72EB6A13"
+				type: "checkmark"
+			}]
+			title: "Coke Oven Bricks"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16CE9C85F3F65236"]
+			description: ["A hollow 3x3x3 cube: 25 Coke Oven Bricks plus the controller. It needs no fuel. It turns logs into charcoal and coal into coke, and every operation also produces creosote oil. Press 'View 3D model' to see the exact layout.", "Sneak and right-click the Field Guide book to open the 3D preview."]
+			icon: "minecraft:smoker"
+			id: "7A3278A38018BFC1"
+			tasks: [{
+				id: "AC0372949DF0D60C"
+				type: "checkmark"
+			}]
+			title: "Build the Coke Oven"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A3278A38018BFC1"]
+			description: ["Creosote oil is a byproduct of every Coke Oven recipe. Store it in a tank or drum (or use a Coke Oven Hatch for automation). It can fuel a steam liquid boiler or large boiler, and it is used to make treated wood planks for the Primitive Water Pump."]
+			icon: "minecraft:honey_bottle"
+			id: "609F5D1EFDB64648"
+			tasks: [{
+				id: "678913A50A924A07"
+				type: "checkmark"
+			}]
+			title: "Collect Creosote"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2DE1AF04D2AEDC3D"]
+			description: ["Mine and smelt 16 copper ingots. Copper is 3/4 of every bronze ingot."]
+			icon: "minecraft:copper_ingot"
+			id: "E705F60347F166D8"
+			tasks: [{
+				id: "591422D9D7B862A2"
+				consume_items: false
+				item: { Count: 1b, id: "minecraft:copper_ingot" }
+				count: 16L
+				type: "item"
+			}]
+			title: "Smelt Copper"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2DE1AF04D2AEDC3D"]
+			description: ["Tin is a GregTech ore. Use JEI's ore vein list to see where it generates, then smelt at least 8 ingots. Tin is the other 1/4 of bronze."]
+			icon: "minecraft:iron_nugget"
+			id: "A8DAE47495B8CB3A"
+			tasks: [{
+				id: "33F96DF1FBA48A89"
+				type: "checkmark"
+			}]
+			title: "Find and Smelt Tin"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["E705F60347F166D8", "A8DAE47495B8CB3A"]
+			description: ["Bronze is 3 parts copper to 1 part tin. Mix the dusts in the crafting grid (or craft ingots, check JEI for what your version allows) and smelt. You need bronze for the first steam machines."]
+			icon: "minecraft:gold_ingot"
+			id: "573541DE90F80AF5"
+			tasks: [{
+				id: "5C02DA3DD9AD6893"
+				type: "checkmark"
+			}]
+			title: "Make Bronze"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["573541DE90F80AF5"]
+			description: ["Make 16 bronze plates by hammering bronze ingots (use a hammer tool on the ingots; look for the Hammer recipe in JEI). Plates are the main ingredient of steam boilers and steam machine casings."]
+			icon: "minecraft:copper_block"
+			id: "CFE68A60CD3F8926"
+			tasks: [{
+				id: "59244808FBB816F3"
+				type: "checkmark"
+			}]
+			title: "Bronze Plates"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CFE68A60CD3F8926", "0211149A7626AA88"]
+			description: ["Build a steam boiler. It takes water plus fuel (coal or charcoal in the solid-fuel version, creosote in the liquid version) and produces steam that powers every steam machine."]
+			icon: "minecraft:blast_furnace"
+			id: "1992453621953DC3"
+			tasks: [{
+				id: "054A22E14974D169"
+				type: "checkmark"
+			}]
+			title: "Steam Boiler"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1992453621953DC3"]
+			description: ["Build a few steam machines, such as a steam compressor (you need it for firebricks), steam furnace, forge hammer and alloy smelter. Aim each machine's steam vent away from yourself: the venting steam hurts."]
+			icon: "minecraft:smoker"
+			id: "8B944B4ECA3B2D86"
+			tasks: [{
+				id: "59B5EA988FE904C6"
+				type: "checkmark"
+			}]
+			title: "First Steam Machines"
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["8B944B4ECA3B2D86", "BA70241809EF3A93"]
+			description: ["Make 32 Firebricks (the blocks). Mix clay dust with brick dust to get fireclay dust, press it in a steam compressor into compressed fireclay, smelt that into a firebrick item, then craft 4 firebrick items in a 2x2 grid into a Firebrick block. The community wiki puts the total at roughly 130 clay."]
+			icon: "minecraft:bricks"
+			id: "099CA325C5DF00E2"
+			tasks: [{
+				id: "6AB4B2D1541EF569"
+				type: "checkmark"
+			}]
+			title: "Firebricks"
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["099CA325C5DF00E2"]
+			description: ["3 wide, 4 tall, 3 deep: a solid 3x3 floor of Firebricks, then three hollow rings with no roof, 32 Firebricks plus the controller. It turns iron ingots plus fuel into steel. It is slow, so many players build more than one and share walls to save bricks. Press 'View 3D model' for the layout.", "Sneak and right-click the Field Guide book to open the 3D preview."]
+			icon: "minecraft:blast_furnace"
+			id: "0C66B8EC1B5D16C0"
+			tasks: [{
+				id: "7FBDD8859213C1A3"
+				type: "checkmark"
+			}]
+			title: "Primitive Blast Furnace"
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C66B8EC1B5D16C0"]
+			description: ["Feed iron ingots and fuel into the Primitive Blast Furnace and collect steel. Steel is needed for high-pressure steam machines and for LV machine hulls, so keep it in constant production."]
+			icon: "minecraft:netherite_ingot"
+			id: "A5DB6085C61F8E03"
+			tasks: [{
+				id: "CE3B425A5854C5E1"
+				type: "checkmark"
+			}]
+			title: "First Steel"
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["A5DB6085C61F8E03"]
+			description: ["Steel-tier (high-pressure) steam machines run faster than bronze-tier ones but burn steam faster, so scale up your boilers to match. They are not strictly required to reach LV."]
+			icon: "minecraft:redstone_block"
+			id: "8133D1B7D75BB15D"
+			tasks: [{
+				id: "494620E151020F87"
+				type: "checkmark"
+			}]
+			title: "High-Pressure Steam"
+			x: 19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["A5DB6085C61F8E03"]
+			description: ["Craft an LV machine hull from steel. It is the base of every LV machine."]
+			icon: "minecraft:iron_block"
+			id: "B783017C88ADBCCF"
+			tasks: [{
+				id: "1525FCD04983B5EF"
+				type: "checkmark"
+			}]
+			title: "LV Machine Hull"
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B783017C88ADBCCF", "8133D1B7D75BB15D"]
+			description: ["Set up your first source of LV electricity and a cable network to carry it. Check JEI for the generators and cables available in your version."]
+			icon: "minecraft:redstone_lamp"
+			id: "CFEAFAC25FD61F2C"
+			tasks: [{
+				id: "76A0A8FE99ED9951"
+				type: "checkmark"
+			}]
+			title: "Reach LV Power"
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CFEAFAC25FD61F2C"]
+			description: ["Replace your steam machines with LV ones to speed up ore processing and automation."]
+			icon: "minecraft:piston"
+			id: "2259A215526098BA"
+			tasks: [{
+				id: "AC3F9A77807158FD"
+				type: "checkmark"
+			}]
+			title: "LV Machines"
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["CFEAFAC25FD61F2C"]
+			description: ["The Electric Blast Furnace takes over steel and alloy production from the Primitive Blast Furnace, which becomes obsolete as you move up the tiers. Check JEI's multiblock tab for its structure and requirements."]
+			icon: "minecraft:blast_furnace"
+			id: "810217C33D580A7D"
+			tasks: [{
+				id: "277D286E49B43C11"
+				type: "checkmark"
+			}]
+			title: "Plan the Electric Blast Furnace"
+			x: 22.5d
+			y: 1.5d
+		}
+	]
+	title: "GregTech Guide"
+}
